@@ -1,7 +1,7 @@
 package com.litangyu.gankio.presenter;
 
-import com.litangyu.gankio.base.AppBasePresenter;
-import com.litangyu.gankio.ui.view.HomeView;
+import com.litangyu.basemvp.base.AppBasePresenter;
+import com.litangyu.gankio.view.HomeView;
 
 /**
  * 描述
@@ -12,7 +12,7 @@ import com.litangyu.gankio.ui.view.HomeView;
  * <p>Copyright © 2016年 litangyu. All rights reserved.</p>
  * <p>Revision：</p>
  */
-public class HomePresenter extends AppBasePresenter<HomeView> {
+public class HomePresenterImpl extends AppBasePresenter<HomeView> {
     @Override
     public void initialized() {
 

@@ -1,6 +1,6 @@
-package com.litangyu.gankio.base;
+package com.litangyu.basemvp.base;
 
-import com.litangyu.gankio.base.AppRuntimeException.ViewNotAttachedException;
+import com.litangyu.basemvp.base.AppRuntimeException.ViewNotAttachedException;
 
 /**
  * 描述

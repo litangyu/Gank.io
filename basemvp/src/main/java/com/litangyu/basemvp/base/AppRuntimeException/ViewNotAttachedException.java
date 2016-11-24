@@ -1,4 +1,4 @@
-package com.litangyu.gankio.base.AppRuntimeException;
+package com.litangyu.basemvp.base.AppRuntimeException;
 
 /**
  * 描述

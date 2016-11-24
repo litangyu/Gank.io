@@ -3,8 +3,8 @@ package com.litangyu.gankio.ui.activities;
 import android.view.View;
 
 import com.litangyu.gankio.R;
-import com.litangyu.gankio.base.BaseActivity;
-import com.litangyu.gankio.presenter.HomePresenter;
+import com.litangyu.basemvp.base.BaseActivity;
+import com.litangyu.gankio.presenter.HomePresenterImpl;
 
 /**
  * 描述
@@ -15,10 +15,10 @@ import com.litangyu.gankio.presenter.HomePresenter;
  * <p>Copyright © 2016年 litangyu. All rights reserved.</p>
  * <p>Revision：</p>
  */
-public class HomeActivity extends BaseActivity<HomePresenter> {
+public class HomeActivity extends BaseActivity<HomePresenterImpl> {
     @Override
-    protected HomePresenter initPresenter() {
-        return new HomePresenter();
+    protected HomePresenterImpl initPresenter() {
+        return new HomePresenterImpl();
     }
 
     @Override

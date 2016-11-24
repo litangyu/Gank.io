@@ -6,7 +6,7 @@
  * 创建日期 16/9/12
  * 版权声明
 */
-package com.litangyu.gankio.base;
+package com.litangyu.basemvp.base;
 
 /**
  * 描述

@@ -1,4 +1,4 @@
-package com.litangyu.gankio.base;
+package com.litangyu.basemvp.base;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -9,8 +9,7 @@ import android.view.*;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.litangyu.gankio.R;
-import com.litangyu.gankio.base.AppRuntimeException.LayoutResIDException;
+import com.litangyu.basemvp.base.AppRuntimeException.LayoutResIDException;
 
 /**
  * 描述
