@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Gank.io</string>
+    <string name="js_interface_name">js</string>
 </resources>
