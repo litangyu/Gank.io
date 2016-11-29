@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_size">14sp</dimen>
+    <dimen name="author_size">12sp</dimen>
+    <dimen name="date_size">12sp</dimen>
+
+    <dimen name="marginTop_16">16dp</dimen>
+    <dimen name="marginLeft_16">16dp</dimen>
+    <dimen name="marginRight_16">16dp</dimen>
+    <dimen name="marginBottom_16">16dp</dimen>
+    <dimen name="marginBottom_8">8dp</dimen>
+</resources>

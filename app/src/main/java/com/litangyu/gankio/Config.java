@@ -11,4 +11,7 @@ package com.litangyu.gankio;
  */
 public class Config {
 
+    public static int ConnectTimeOut = 15;
+
+    public static String BASE_URL = "http://gank.io/api/";
 }

@@ -16,9 +16,18 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
+import com.litangyu.gankio.service.GankIoService;
 import com.litangyu.gankio.util.ActivityUtil;
+import com.litangyu.gankio.util.ConnectUtil;
 
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * 描述
@@ -42,6 +51,8 @@ public class App extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        ConnectUtil.init();
     }
 
     /**

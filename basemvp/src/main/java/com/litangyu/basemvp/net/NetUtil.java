@@ -16,7 +16,8 @@ import java.util.Locale;
  * <p>Revision：</p>
  */
 public class NetUtil {
-    public static enum NetType {
+
+    public enum NetType {
         WIFI, CMNET, CMWAP, NONE
     }
 

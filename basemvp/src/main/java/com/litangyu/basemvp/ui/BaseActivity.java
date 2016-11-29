@@ -1,4 +1,4 @@
-package com.litangyu.basemvp.base;
+package com.litangyu.basemvp.ui;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -9,7 +9,9 @@ import android.view.*;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
+import com.litangyu.basemvp.base.AppBasePresenter;
 import com.litangyu.basemvp.base.AppRuntimeException.LayoutResIDException;
+import com.litangyu.basemvp.base.Contract;
 
 /**
  * 描述

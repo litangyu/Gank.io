@@ -8,6 +8,8 @@
 */
 package com.litangyu.basemvp.base;
 
+import android.content.Context;
+
 /**
  * 描述
  * Presenter接口
@@ -15,5 +17,5 @@ package com.litangyu.basemvp.base;
  * Created on: 16/9/12 下午3:58
  */
 public interface Presenter {
-    void initialized();
+    void initialized(Context context);
 }

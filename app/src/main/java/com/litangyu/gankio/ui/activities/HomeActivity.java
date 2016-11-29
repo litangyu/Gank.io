@@ -1,10 +1,13 @@
 package com.litangyu.gankio.ui.activities;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 
+import com.litangyu.basemvp.ui.BaseActivity;
 import com.litangyu.gankio.R;
-import com.litangyu.basemvp.base.BaseActivity;
 import com.litangyu.gankio.presenter.HomePresenterImpl;
+import com.litangyu.gankio.ui.adapter.HomeTabAdapter;
 
 /**
  * 描述
@@ -16,6 +19,11 @@ import com.litangyu.gankio.presenter.HomePresenterImpl;
  * <p>Revision：</p>
  */
 public class HomeActivity extends BaseActivity<HomePresenterImpl> {
+
+    private TabLayout mTab_title;
+    private ViewPager mVp_home_content;
+    private HomeTabAdapter mHomeTabAdapter;
+
     @Override
     protected HomePresenterImpl initPresenter() {
         return new HomePresenterImpl();
@@ -28,22 +36,28 @@ public class HomeActivity extends BaseActivity<HomePresenterImpl> {
 
     @Override
     protected void bindView() {
-
+        mTab_title = (TabLayout) findViewById(R.id.tab_title);
+        mVp_home_content = (ViewPager) findViewById(R.id.vp_home_content);
     }
 
     @Override
     protected void initView() {
-
+        mTab_title.setTabMode(TabLayout.MODE_FIXED);
     }
 
     @Override
     protected void initData() {
+        mPresenter.initialized(this);
 
+        mHomeTabAdapter = new HomeTabAdapter(getSupportFragmentManager(),
+                mPresenter.getFragments(), mPresenter.getTitles());
+        mVp_home_content.setAdapter(mHomeTabAdapter);
+
+        mTab_title.setupWithViewPager(mVp_home_content);
     }
 
     @Override
     protected void setListener() {
-
     }
 
     @Override
